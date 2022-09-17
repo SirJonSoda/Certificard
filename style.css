@@ -1,0 +1,109 @@
+/* Começar do elemento maior em direção ao menor */
+@import url("https://fonts.googleapis.com/css2?family=Nabla&family=Roboto:wght@400;700&display=swap");
+
+body {
+  background: linear-gradient(236.85deg, #112244 27.26%, #7799dd 96.03%);
+  font-family: "Roboto", sans-serif;
+  /* font-family: "Nabla", cursive; */
+}
+
+.container {
+  /*  para estilizar uma classe, usa-se um ponto (.) na frente  */
+  background: #ecf4ff;
+  color: #1c1c1c;
+  /*  cor da fonte  */
+  margin: 64px;
+  /*  margem do elemento externo, o próprio container  */
+  border-radius: 20px;
+  /*  arredondamento dos cantos  */
+  box-shadow: 6px 6px 6px #0e1d2f;
+  /*  sombreamento 3D  */
+  padding: 64px;
+  /*  margem para os elementos internos do container  */
+}
+
+.cabecalho {
+  display: flex;
+  justify-content: space-between;
+  /* espaço entre os titulos h1 e h3 e o botão de alterar tema */
+}
+
+.perfil {
+  display: flex;
+  /*  flex box. Prático, com várias funções de posicionamento de itens  */
+}
+
+.perfil-foto {
+  max-height: 140px;
+  border-radius: 460px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.titulo {
+  margin-left: 10px;
+}
+
+.titulo h1 {
+  /*  especifica que é apenas a tag h1 contida na tag de classe titulo  */
+  font-weight: 700;
+  font-size: 36px;
+}
+
+.titulo h3 {
+  /*  especifica que é apenas a tag h1 contida na tag de classe titulo  */
+  font-weight: 400;
+  font-size: 24px;
+}
+
+.tema button {
+  align-self: flex-end;
+  font-weight: 400;
+  font-size: 24px;
+  padding: 8px 16px;
+  /* o 1o valor é distância vertical; o 2o, horizontal. Regra é universal para margens*/
+  background-color: #ecf4ff;
+  border-radius: 100px;
+}
+
+.projetos {
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(230.65deg, #499cfe 27.49%, #9cc8fc 83.19%);
+  margin-top: 32px;
+  padding: 32px;
+  box-shadow: 2px 2px 4px rgba(16, 16, 16, 0.42);
+  border-radius: 20px;
+}
+
+.projetos-titulo {
+  list-style: none;
+  font-weight: 700;
+  font-size: 36px;
+}
+
+.projetos-item {
+  list-style-type: none;
+  font-size: 24px;
+  font-weight: 400px;
+  line-height: 48px;
+}
+
+.dark {
+  /* a classe dark passar a existir na tag body com o acionamento do botão Alterar Tema */
+  background: linear-gradient(236.85deg, #375b86 27.26%, #6b87a9 96.03%);
+}
+
+.dark .container {
+  background: #333439;
+  color: #f6f6f6;
+}
+
+.dark .projetos {
+  color: #1c1c1c;
+}
+
+.dark .tema button {
+  background: #1c1c1c;
+  color: #ffffff;
+  border: 1px solid #f7f7f7;
+}
